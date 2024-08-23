@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    overflow: hidden;
+}
+
+.main_container {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(209, 226, 235);
+    overflow-y: scroll;
+}
+
+.list_contain_div {
+    width: 100%;
+    height: 35vh;
+    background-image: url(./images/wp7664129-todo-wallpapers.jpg);
+    background-size: 100% 35vh;
+    background-repeat: no-repeat;
+    background-position: top;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.todo_contain {
+    width: 45%;
+    margin-top: 135px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.todo_contain h1 {
+    font-size: 46px;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.todo_contain input {
+    width: calc(100% - 30px);
+    padding: 12px;
+    border: none;
+    outline: none;
+    border-radius: 12px;
+}
+
+
+.list_item {
+    width: calc(100% - 30px);
+    padding: 12px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 12px;
+}
+
+.list_item p {
+    color: black;
+    font-size: 16px;
+    font-weight: normal;
+    text-transform: capitalize;
+}
+
+@media only screen and (min-width:120px) and (max-width: 1100px) {
+    .todo_contain {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .todo_contain h1 {
+        font-size: 32px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .list_contain_div {
+        height: 100vh;
+        background-size: 100% 100vh;
+        overflow: scroll;
+    }
+}
+@media screen and (min-width: 250px) and (max-width: 750px) {
+    .todo_contain {
+        margin-top: 50px;
+    }
+}
